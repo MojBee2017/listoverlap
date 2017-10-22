@@ -1,0 +1,23 @@
+def gimme(sample="Enter a number: "):
+    return(int(input(sample)))
+
+def is_prime(num):
+    #num=int(n) 
+    count=0
+    if (num==2 or num==1):
+            print("{} is a prime number".format(num))
+    else:
+        
+        for i in range(1,num):
+                
+            if (num%i==0):
+                
+                count+=1
+                print("{} divides {}".format(i,num))
+    if count==1:
+        print("{} is a prime number".format(num))
+    else:
+        print("{} is not a prime number".format(num))
+        
+
+try_it=is_prime(gimme())
